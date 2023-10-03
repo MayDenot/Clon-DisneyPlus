@@ -1,0 +1,30 @@
+---
+import '@fontsource/poppins';
+import { ViewTransitions } from 'astro:transitions';
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="https://static-assets.bamgrid.com/product/disneyplus/favicons/favicon-32x32.3699f19f7fdff1a556c0953c12fb883f.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<ViewTransitions />
+	</head>
+	<body class="font-sans">
+		<slot />
+	</body>
+</html>
+<style is:global>
+	html {
+		background: #1A1D29;
+	}
+</style>

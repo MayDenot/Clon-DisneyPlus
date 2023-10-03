@@ -1,0 +1,36 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import SliderHome from "../components/SliderHome.astro";
+import Collection1 from "../components/Collection1.astro";
+import Collection2 from "../components/Collection2.astro";
+import Cards from '../components/Cards.astro';
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Disney+ | Películas y series">
+	<Header />
+	<Collection1 />
+	<Collection2 subtitle="Novedades en Disney+">
+		<Cards src="/assets/ahsoka.jpg" alt="Ashoka" />
+		<Cards src="/assets/elementos.jpg" alt="Elementos" />
+		<Cards src="/assets/l-pop.jpg" alt="L-POP" />
+		<Cards src="/assets/lasirenita.jpg" alt="La Sirenita" />
+		<Cards src="/assets/mafalda.jpg" alt="Mafalda" />
+	</Collection2>
+	<Collection2 subtitle="Aventuras Acuáticas">
+		<Cards src="/assets/buscandoadory.jpg" alt="Buscando a Dory" />
+		<Cards src="/assets/junglecruise.jpg" alt="Jungle Cruise" />
+		<Cards src="/assets/moana.jpg" alt="Moana" />
+		<Cards src="/assets/lasirenita.jpg" alt="La Sirenita" />
+		<Cards src="/assets/piratasdelcaribevenganza.jpg" alt="Piratas del Caribe: La venganza de Salazar" />
+	</Collection2>
+	<Collection2 subtitle="Series Icónicas">
+		<Cards src="/assets/agentecarter.jpg" alt="Agente Carter" />
+		<Cards src="/assets/eraseunavez.jpg" alt="Erase una vez" />
+		<Cards src="/assets/mandalorian.jpg" alt="Mandalorian" />
+		<Cards src="/assets/hawkeye.jpg" alt="Hawkeye" />
+		<Cards src="/assets/austinandally.jpg" alt="Austin & Ally" />
+	</Collection2>
+	<Footer />
+</Layout>

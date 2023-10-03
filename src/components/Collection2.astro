@@ -1,0 +1,13 @@
+---
+interface Props {
+  subtitle: string,
+} 
+const { subtitle } = Astro.props;
+---
+
+<section class="mx-[90px]">
+  <h2 class="font-semibold text-white text-xl mb-[10px]">{subtitle}</h2>
+  <div id="content" class="flex gap-2 [&>div]:cursor-pointer">
+    <slot />
+  </div>
+</section>

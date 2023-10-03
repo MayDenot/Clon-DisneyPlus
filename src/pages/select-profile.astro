@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Seleccionar perfil | Disney+">
+  <header class="w-full flex justify-between items-center py-[12px] px-[35px]">
+    <a href="/">
+      <img
+        class="w-[80px]"
+        src="https://static-assets.bamgrid.com/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg"
+        alt="Logo"
+      />
+    </a>
+    <a
+      href="/edit-profiles"
+      class="bg-[#474a53] py-[11px] px-[23px] text-white
+    font-semibold rounded-[4px] tracking-widest"
+      >EDITAR PERFILES</a
+    >
+  </header>
+  <article class="w-full flex flex-col text-white text-3xl mt-[20px]">
+    <h1 class="text-center my-[90px]">¿Quién anda ahí?</h1>
+    <div
+      id="profiles"
+      class="flex justify-center [&>div>a>img]:mb-[20px] [&>div]:px-[15px]
+      [&>div]:text-center [&>div]:cursor-pointer [&>div]:w-[10%] [&>div]:text-xl
+      hover:[&>div>a>img]:rounded-[50%] hover:[&>div>a>img]:border-[4px] [&>div]:transition
+      [&>div]:ease-in-out [&>div]:duration-500 hover:[&>div]:scale-105 hover:[&>div>a>img]:border-white"
+    >
+      <div class="profile">
+        <a href="/">
+          <img
+          src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/59410138DC977B5A0D1BDE8216C62E61839CCD5F249999DBF48FBFA9CE32EB96/scale?width=280&aspectRatio=1.00&format=png"
+          alt="Perfil May"
+        />
+        May
+        </a>
+      </div>
+      <div class="profile">
+        <a href="/">
+          <img
+          src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/0E8C7B13F7813597584C02146D62F48C7230D08B0BEF331365B0D6AC8CF74FD8/scale?width=280&aspectRatio=1.00&format=png"
+          alt="Perfil Aye"
+        />
+        Aye
+        </a>
+      </div>
+      <div class="profile">
+        <a href="/">
+          <img
+          src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/F73277B06EE997988A5DD3356F145DB4A0D9C82A7656796DB20B93B2D0DC7C79/scale?width=280&aspectRatio=1.00&format=png"
+          alt="Perfil JyR"
+        />
+        JyR
+        </a>
+      </div>
+      <div id="add-profiles" class="cursor-pointer">
+        <a href="/select-avatar">
+          <div
+            id="icon-addp"
+            class="w-[160px] h-[160px] bg-[#474a53] hover:bg-[#74757d] rounded-[100px] flex 
+            items-center justify-center mb-[20px] hover:border-white transition ease-in-out 
+            duration-500 hover:border-[4px]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="80"
+              height="80"
+              fill="currentColor"
+              class="bi bi-plus"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+              ></path>
+            </svg>
+          </div>
+          Crear perfil
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

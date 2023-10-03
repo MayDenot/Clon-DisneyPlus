@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Ajustes de reproducción | Disney+">
+  <Header />
+  <article
+    class="min-h-[85vh] w-full flex items-center justify-center text-white"
+  >
+    <div
+      class="wrapper-settings w-[25vw] h-full font-semibold [&>a>h5]:p-0 [&>a>p]:p-0"
+    >
+      <h2 class="text-3xl mb-[20px]">Ajustes de la aplicación</h2>
+      <p class="text-[#b7b8b9] text-sm tracking-wide mb-[5px]">USO DE DATOS</p>
+      <div class="line bg-[#5c5e67] w-full h-[1px]"></div>
+      <a class="options cursor-pointer">
+        <h5 class="ml-[10px] mt-[15px] mb-[5px]">Automático</h5>
+        <p class="ml-[10px] text-[#686a70] text-[10px] mb-[15px]">
+          Para ver en la mejor calidad disponible, hasta 4K UHD(4.2 GB/h).
+        </p>
+      </a>
+      <div class="line bg-[#5c5e67] w-full h-[1px]"></div>
+      <a class="options cursor-pointer">
+        <h5 class="ml-[10px] mt-[15px] mb-[5px]">Moderado</h5>
+        <p class="ml-[10px] text-[#686a70] text-[10px] mb-[15px]">
+          Para ver hasta en calidad HD con menos datos (1.2 GB/h).
+        </p>
+      </a>
+      <div class="line bg-[#5c5e67] w-full h-[1px]"></div>
+      <a class="options cursor-pointer">
+        <h5 class="ml-[10px] mt-[15px] mb-[5px]">Ahorro de datos</h5>
+        <p class="ml-[10px] text-[#686a70] text-[10px] mb-[15px]">
+          Para ver en calidad SD con muy pocos datos (0.6 GB/h).
+        </p>
+      </a>
+      <br />
+      <a
+        href="/"
+        class="px-[200px] py-3 bg-[#0072d2] rounded-[4px] tracking-widest hover:bg-[#0682f0]"
+        >GUARDAR</a
+      >
+    </div>
+  </article>
+  <Footer />
+</Layout>
