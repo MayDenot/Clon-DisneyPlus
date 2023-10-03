@@ -1,0 +1,53 @@
+---
+import FooterLogin from "../components/FooterLogin.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Iniciar Sesión | Disney+">
+  <header class="border-b-[1px] border-[#31343e]">
+    <div id="logo-container" class="mx-[40px] my-[10px]">
+      <a id="logo-login" href="/es-ar">
+        <img
+          class="w-[80px]"
+          src="https://static-assets.bamgrid.com/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg"
+          alt="Logo"
+        />
+      </a>
+    </div>
+  </header>
+  <article class="flex justify-center min-h-[80vh] mt-[50px]">
+    <div id="log-in" class="w-[400px] [&>p]:text-[12px] text-white">
+      <h2 class="font-semibold text-xl mb-[10px]">
+        Inicia sesión con tu correo
+      </h2>
+      <p class="max-w-[330px] mb-[20px]">
+        Es necesario que uses este correo y contraseña para iniciar sesión en tu
+        cuenta de Disney+ y ver tus series y películas favoritas.
+      </p>
+      <form id="form" class="w-full flex flex-col">
+        <label for="email"></label>
+        <input
+          class="p-[15px] bg-[#31333e] rounded-[5px] focus:border-[1px] border-[#a7a6a6] 
+          border-opacity-20 outline-none"
+          id="email"
+          type="email"
+          placeholder="Correo electrónico"
+        />
+        <button
+          class="bg-[#0072d2] hover:bg-[#0682f0] py-3 rounded-[5px] font-semibold mb-[40px] mt-[20px]"
+          type="submit">CONTINUAR</button
+        >
+      </form>
+      <p class="text-[#969696]">
+        ¿Primera vez en Disney+?
+        <a
+          href="/es-ar"
+          class="transition ease-in-out duration-300
+          text-white hover:text-[#2788ff] hover:underline"
+          >Suscribirme</a
+        >
+      </p>
+    </div>
+  </article>
+  <FooterLogin />
+</Layout>
