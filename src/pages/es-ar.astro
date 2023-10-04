@@ -1,7 +1,35 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import LayoutIndex from "../layouts/LayoutIndex.astro";
 ---
 
-<Layout title="Disney+ | Disney, Pixar, Marvel y National Geographic">
-
-</Layout>
+<LayoutIndex>
+  <section class="w-full min-h-[90vh] bg-index bg-cover bg-p-index bg-no-repeat">
+    <a
+      href="/login"
+      class="bg-btn-login absolute top-0 right-0 mt-[10px] mx-[50px] border-[1px]
+    border-white py-[10px] px-[20px] rounded-[3px] tracking-widest hover:bg-white
+    hover:text-black text-white"
+    >
+      INICIAR SESIÓN
+    </a>
+    <article
+      class="w-full min-h-[90vh] text-white flex flex-col justify-center items-start pl-[120px]"
+    >
+      <div id="body-article" class="flex flex-col">
+        <img
+          class="w-[200px] mb-[20px]"
+          src="https://static-assets.bamgrid.com/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg"
+          alt="Logo"
+        />
+        <h1 class="max-w-[650px] font-bold text-[40px] tracking-wide mb-[30px]">
+          Tus historias favoritas, todas en un mismo lugar.
+        </h1>
+        <a href="" class="bg-[#6421ff] hover:bg-[#7827ff] text-center tracking-wider py-5 px-6
+        mb-[20px] rounded-[4px] transition duration-300 ease-in-out"
+          >CONTRATÁ LA OFERTA COMBO+</a
+        >
+        <a href="" class="underline">Suscribirme solo a Disney+</a>
+      </div>
+    </article>
+  </section>
+</LayoutIndex>
