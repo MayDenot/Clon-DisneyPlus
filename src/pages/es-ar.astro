@@ -1,9 +1,12 @@
 ---
 import LayoutIndex from "../layouts/LayoutIndex.astro";
+import FooterEsAr from "../components/FooterEsAr.astro"
 ---
 
 <LayoutIndex>
-  <section class="w-full min-h-[90vh] bg-index bg-cover bg-p-index bg-no-repeat">
+  <section
+    class="w-full min-h-[70vh] bg-index bg-cover bg-p-index bg-no-repeat"
+  >
     <a
       href="/login"
       class="bg-btn-login absolute top-0 right-0 mt-[10px] mx-[50px] border-[1px]
@@ -24,12 +27,296 @@ import LayoutIndex from "../layouts/LayoutIndex.astro";
         <h1 class="max-w-[650px] font-bold text-[40px] tracking-wide mb-[30px]">
           Tus historias favoritas, todas en un mismo lugar.
         </h1>
-        <a href="" class="bg-[#6421ff] hover:bg-[#7827ff] text-center tracking-wider py-5 px-6
-        mb-[20px] rounded-[4px] transition duration-300 ease-in-out"
+        <a
+          href=""
+          class="bg-[#6421ff] hover:bg-[#7827ff] text-center tracking-wider py-5 px-6
+        mb-[20px] rounded-[4px] transition duration-300 ease-in-out text-xl"
           >CONTRATÁ LA OFERTA COMBO+</a
         >
         <a href="" class="underline">Suscribirme solo a Disney+</a>
       </div>
     </article>
   </section>
+  <section id="plan" class="w-full min-h-screen">
+    <div
+      id="wrapper-plans"
+      class="h-full flex flex-col justify-center items-center text-white mt-[50px]"
+    >
+      <h2 class="text-4xl font-semibold mb-[25px]">Elegí tu plan</h2>
+      <h5 class="text-[#bebec0]">Podés cancelar en cualquier momento.</h5>
+      <div id="plans" class="mt-[100px]">
+        <table id="plans-grid" class="min-w-[85vw] mb-[20px]">
+          <tr>
+            <th></th>
+            <th class="border-t-2 border-[#1e202c] px-20">
+              <div class="flex flex-col items-center py-8">
+                <p class="font-light mb-[15px]">Disney+</p>
+                <img
+                  class="w-[100px] mb-[5px]"
+                  src="https://static-assets.bamgrid.com/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg"
+                  alt="Disney+"
+                />
+                <button
+                  class="bg-[#0063e5] hover:bg-[#016cf9] py-[15px] px-[40px] rounded-[4px] font-light text-"
+                  >ARS 799/MES (FINAL)*</button
+                >
+              </div>
+            </th>
+            <th
+              class="relative bg-[#1d1f2b] border-t-2 border-[#343641] px-20 flex justify-center"
+            >
+              <p
+                class="absolute top-[-15px] w-[100px] bg-white text-black rounded-[20px] py-1
+              text-[12px]"
+              >
+                Más popular
+              </p>
+              <div class="flex flex-col items-center py-8">
+                <p class="font-light mb-[15px]">Combo+</p>
+                <img
+                  class="w-[120px] mb-[15px]"
+                  src="https://cnbl-cdn.bamgrid.com/assets/65c73d25aa12582d6556ee8c17b0d057d27632782cda205ccfe7792a1e93a339/original"
+                  alt="Combo+"
+                />
+                <button
+                  class="bg-[#6421ff] hover:bg-[#7827ff] py-[15px] px-[40px] rounded-[4px] font-light text-"
+                  >ARS 1.999/MES (FINAL)*</button
+                >
+              </div>
+            </th>
+          </tr>
+          <tr class="border-t-[1px]">
+            <td class="max-w-[330px] text-sm font-light text-[#c0c0c0]"
+              >Precio anual</td
+            >
+            <td class="text-center">
+              <div class="py-8">
+                <p class="mb-[10px] text-[#c0c0c0]">
+                  ¡12 meses al precio de 9!
+                </p>
+                <button
+                  class="bg-[#0063e5] hover:bg-[#016cf9] py-[15px] px-[40px] rounded-[4px]
+                font-light text-"
+                  >ARS 6.699/AÑO (FINAL)*</button
+                >
+              </div>
+            </td>
+            <td class="bg-[#1d1f2b] text-center">-</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Estrenos de películas, series originales y clásicos de Disney,
+              Pixar, Marvel, Star Wars y National Geographic</td
+            >
+            <td class="text-center">✔</td>
+            <td class="bg-[#1d1f2b] text-center">✔</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Deportes en vivo de las mejores ligas del mundo y los torneos más
+              importantes de ESPN</td
+            >
+            <td class="text-center">-</td>
+            <td class="bg-[#1d1f2b] text-center">✔</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Producciones locales y películas, series y programas de TV
+              premiados exclusivos de Star+</td
+            >
+            <td class="text-center">-</td>
+            <td class="bg-[#1d1f2b] text-center">✔</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Dispositivos para ver en simultáneo</td
+            >
+            <td class="text-center">4</td>
+            <td class="bg-[#1d1f2b] text-center">4 + 4</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Descargas para ver tus favoritos sin conexión ni demoras</td
+            >
+            <td class="text-center">✔</td>
+            <td class="bg-[#1d1f2b] text-center">✔</td>
+          </tr>
+          <tr class="border-t-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Perfiles personalizados</td
+            >
+            <td class="text-center">7</td>
+            <td class="bg-[#1d1f2b] text-center">7 + 7</td>
+          </tr>
+          <tr class="border-y-[1px] border-[#343641]">
+            <td class="max-w-[330px] text-sm font-light py-5 text-[#c0c0c0]"
+              >Controles parentales para proteger a tu familia</td
+            >
+            <td class="text-center">✔</td>
+            <td class="bg-[#1d1f2b] text-center">✔</td>
+          </tr>
+        </table>
+        <p class="text-[10px] italic text-[#c0c0c0]">
+          *El precio podría variar en caso de que el pago se realice en otras
+          plataformas. Podrían aplicar cargos de terceros.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="w-full min-h-screen">
+    <div id="container" class="flex items-center">
+      <div class="min-h-screen flex justify-center items-center">
+        <div>
+          <h2 class="font-bold text-4xl text-white mb-[25px]">
+            Cuando quieras, donde quieras
+          </h2>
+          <p class="max-w-[720px] text-lg text-[#c0c0c0]">
+            Disfrutalo en tu pantalla favorita, ya sea tu TV, tableta,
+            computadora, teléfono y otros. Viví una experiencia única con una
+            amplia selección de títulos en 4K. Además, podés ver en cuatro
+            pantallas en simultáneo para que nadie se quede afuera.
+          </p>
+        </div>
+        <div class="w-[45%]">
+          <img
+            src="https://cnbl-cdn.bamgrid.com/assets/dae41e464f90a537d55064a1609a99890fb93a408af955519dbe9992e0ab3a04/original"
+            alt="Presentacion de la web de DisneyPlus"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full min-h-screen">
+    <div id="container-exclusive" class="flex justify-center">
+      <div id="wrapper-exclusive" class="mx-[100px]">
+        <h2 class="text-white text-4xl font-semibold text-center mb-[25px]">
+          Originales Disney+ exclusivos
+        </h2>
+        <p class="text-[#c0c0c0] text-center mb-[20px]">
+          Disfrutá de películas, series y documentales nunca antes vistos. Solo
+          en Disney+.
+        </p>
+        <div
+          id="content-grid"
+          class="grid grid-cols-3 gap-6 [&>div>img]:rounded-md [&>div>img]:w-full
+          [&>div>img]:h-full"
+        >
+          <div>
+            <img
+              src="/assets/thebeatlesgetback.jpg"
+              alt="The Beatles GET BACK"
+            />
+          </div>
+          <div>
+            <img src="/assets/bobafett.jpg" alt="Boba Fett" />
+          </div>
+          <div>
+            <img src="/assets/whatif.jpg" alt="What If" />
+          </div>
+          <div>
+            <img src="/assets/olaf.jpg" alt="Olaf Presenta" />
+          </div>
+          <div>
+            <img src="/assets/luca.jpg" alt="Luca" />
+          </div>
+          <div>
+            <img src="/assets/monstersatwork.jpg" alt="Monsters at work" />
+          </div>
+          <div>
+            <img
+              src="/assets/bienvenidosalatierra.jpg"
+              alt="Bienvenidos a la tierra"
+            />
+          </div>
+          <div>
+            <img src="/assets/hawkeye.jpg" alt="Hawkeye Serie" />
+          </div>
+          <div>
+            <img src="/assets/eldiariodegreg.jpg" alt="El diario de Greg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full min-h-screen">
+      <div class="flex items-center mt-[100px] mx-[100px]">
+        <img src="/assets/elreyleon.png" alt="El Rey León" />
+        <div class="absolute right-0">
+          <h2 class="text-white text-2xl font-semibold mb-[20px]">Descargá series y películas</h2>
+          <p class="max-w-[75%] text-[#c0c0c0]">
+            Descargas ilimitadas para ver lo que quieras, cuando quieras. Llevá
+            tus historias favoritas siempre con vos, incluso sin conexión.
+          </p>
+        </div>
+    </div>
+  </section>
+  <section class="w-full min-h-screen">
+    <div id="container-devices" class="min-h-screen flex flex-col justify-center text-white mx-[80px]">
+      <h2 class="text-4xl font-semibold text-center mb-[25px]">Disponible en tus dispositivos favoritos</h2>
+      <div id="devices" class="flex [&>div]:flex [&>div]:flex-col [&>div]:items-center
+        [&>div>p]:text-[#c0c0c0] [&>div>img]:w-[90%] [&>div>h2]:font-semibold [&>div>h2]:mb-[20px] [&>div>h2]:text-2xl">
+        <div class="text-center">
+          <img src="https://cnbl-cdn.bamgrid.com/assets/d73b7c534afd2af2a454dbd47bd6c766c70e334ce8137084e9cd25c2644dd267/original" alt="Dispositivo Computadoras">
+          <h2>Computadoras</h2>
+          <p>Chrome OS</p>
+          <p>MacOS</p>
+          <p>PC Windows</p>
+        </div>
+        <div class="text-center">
+          <img src="https://cnbl-cdn.bamgrid.com/assets/00fb59319fa715222100d8a84d11bc7e23a42970b4f413c9e85166d0cfba9346/original" alt="Dispositivos TV">
+          <h2>TV</h2>
+          <p>Amazon Fire TV</p>
+          <p>Android TV</p>
+          <p>Apple TV</p>
+          <p>Chromecast</p>
+          <p>LG</p>
+          <p>Roku</p>
+          <p>Samsung</p>
+        </div>
+        <div class="text-center">
+          <img src="https://cnbl-cdn.bamgrid.com/assets/51b639d2ebe97ee175975c29d42a90b0e043713856db8e5d6d9fb87b2b3a48c0/original" alt="Dispositivos Consolas">
+          <h2>Consolas</h2>
+          <p>PS4</p>
+          <p>PS5</p>
+          <p>Xbox One</p>
+          <p>Xbox Series X</p>
+          <p>Xbox Series S</p>
+        </div>
+        <div class="text-center">
+          <img src="https://cnbl-cdn.bamgrid.com/assets/66475056e769443ef9a491a48dfa44059c8964890ae9ef7c4f69f322693c59d8/original" alt="Dispositivos Celulares y tabletas">
+          <h2>Celulares y tabletas</h2>
+          <p>Tabletas Amazon Fire</p>
+          <p>Celulares y tabletas Android</p>
+          <p>iPhone y iPad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="w-full min-h-[60vh]">
+    <div id="frequent-questions" class="min-h-[60vh] flex flex-col justify-center 
+      items-center">
+      <h2 class="text-white text-4xl font-semibold mb-[30px]">Preguntas frecuentes</h2>
+      <div id="container-questions" class="[&>button]:min-w-[85vw] [&>button]:w-full [&>button]:text-white [&>button]:flex [&>button]:bg-[#13151d]
+        [&>button]:mb-[15px] [&>button]:py-4 [&>button]:px-6 [&>button]:justify-between [&>button]:items-center [&>button>p]:text-lg 
+        [&>button>h3]:text-4xl">
+        <button>
+          <p>¿Qué incluye Disney+?</p>
+          <h3>+</h3>
+        </button>
+        <button>
+          <p>¿Ya tenés Disney+ o Star+ y querés Combo+?</p>
+          <h3>+</h3>
+        </button>
+        <button>
+          <p>¿Cómo puedo pagar?</p>
+          <h3>+</h3>
+        </button>
+        <button>
+          <p>¿Cómo puedo ver el contenido 16+ y 18+?</p>
+          <h3>+</h3>
+        </button>
+      </div>
+    </div>
+  </section>
+  <FooterEsAr />
 </LayoutIndex>
