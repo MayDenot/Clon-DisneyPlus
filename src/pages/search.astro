@@ -1,25 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
+import HeaderSearch from "../components/HeaderSearch.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="Buscar películas y series | Disney+">
-  <Header />
+  <HeaderSearch />
   <section class="w-full min-h-screen">
-    <div id="search-container" class="mt-[70px]">
-      <form class="mb-[50px]">
-        <label for="search"></label>
-        <input
-          class="min-w-full bg-search bg-[#4b4e5a] px-24 py-5 text-[40px] font-bold 
-          tracking-wider outline-none focus:bg-focus-s text-white focus:placeholder:text-[#c2c3c4]"
-          id="search"
-          type="search"
-          placeholder="Título, personaje o género"
-        />
-      </form>
+    <div id="search-container" class="my-[230px]">
       <div id="explore-grid" class="flex flex-col mx-[90px]">
         <h2 class="text-white text-xl mb-[20px]">Explorar</h2>
-        <div id="explore" class="grid grid-cols-5 gap-5 [&>a>img]:rounded-[4px]">
+        <div id="explore" class="grid grid-cols-5 gap-5 [&>a>img]:shadow-cards [&>a>img]:rounded-[4px]
+          hover:[&>a]:scale-105 [&>a]:border-transparent [&>a]:border-[3px] 
+          hover:[&>a]:border-white hover:[&>a]:p-1 [&>a]:rounded-[10px] [&>a]:transition 
+          [&>a]:ease-in-out [&>a]:duration-300">
           <a href="/halloween">
             <img src="/assets/halloween.png" alt="Halloween Colección">
           </a>
@@ -84,4 +78,5 @@ import Header from "../components/Header.astro";
       </div>
     </div>
   </section>
+  <Footer>
 </Layout>
