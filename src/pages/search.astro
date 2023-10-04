@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Buscar películas y series | Disney+">
+  <Header />
+  <section class="w-full min-h-screen">
+    <div id="search-container" class="mt-[70px]">
+      <form class="mb-[50px]">
+        <label for="search"></label>
+        <input
+          class="min-w-full bg-search bg-[#4b4e5a] px-24 py-5 text-[40px] font-bold 
+          tracking-wider outline-none focus:bg-focus-s text-white focus:placeholder:text-[#c2c3c4]"
+          id="search"
+          type="search"
+          placeholder="Título, personaje o género"
+        />
+      </form>
+      <div id="explore-grid" class="flex flex-col mx-[90px]">
+        <h2 class="text-white text-xl mb-[20px]">Explorar</h2>
+        <div id="explore" class="grid grid-cols-5 gap-5 [&>a>img]:rounded-[4px]">
+          <a href="/halloween">
+            <img src="/assets/halloween.png" alt="Halloween Colección">
+          </a>
+          <a href="/loki">
+            <img src="/assets/lokicoleccion.png" alt="Loki Colección">
+          </a>
+          <a href="/science-fiction">
+            <img src="/assets/cienciaficcion.png" alt="Ciencia Ficción Colección">
+          </a>
+          <a href="/comedias">
+            <img src="/assets/comedia.png" alt="Comedia Colección">
+          </a>
+          <a href="/walt-disney-animation-studios">
+            <img src="/assets/disneyanimacion.png" alt="Walt Disney Animation Studios Colección">
+          </a>
+          <a href="/cortos-de-pixar">
+            <img src="/assets/pixarcortos.png" alt="Pixar Cortos Colección">
+          </a>
+          <a href="/lucasfilm">
+            <img src="/assets/lucasfilm.png" alt="Lucasfilm Colección">
+          </a>
+          <a href="/made-in-latin-america">
+            <img src="/assets/latinoamerica.png" alt="Hecho en Latinoamérica Colección">
+          </a>
+          <a href="/disney-100">
+            <img src="/assets/disney100.png" alt="Disney 100 Colección">
+          </a>
+          <a href="/high-school-musical">
+            <img src="/assets/highschoolmusical.png" alt="High School Musical Colección">
+          </a>
+          <a href="/inspirados-en-libros">
+            <img src="/assets/inspiradosenlibros.png" alt="Inspirados en Libros Colección">
+          </a>
+          <a href="/miraculous-las-aventuras-de-ladybug">
+            <img src="/assets/miraculous.png" alt="Miraculous Colección">
+          </a>
+          <a href="/made-in-argentina">
+            <img src="/assets/hechoenargentina.png" alt="Hecho en Argentina Colección">
+          </a>
+          <a href="/made-in-mexico">
+            <img src="/assets/hechoenmexico.png" alt="Hecho en México Colección">
+          </a>
+          <a href="/mickey-y-sus-amigos">
+            <img src="/assets/mickymouseycompañia.png" alt="Micky Mouse y Compañía Colección">
+          </a>
+          <a href="/los-vengadores-de-marvel">
+            <img src="/assets/avengerscoleccion.png" alt="Avengers Colección">
+          </a>
+          <a href="/disney-junior">
+            <img src="/assets/disneyjunior.png" alt="Disney Junior Colección">
+          </a>
+          <a href="/cars">
+            <img src="/assets/carscoleccion.png" alt="Cars Colección">
+          </a>
+          <a href="/la-era-de-hielo">
+            <img src="/assets/laeradehielocoleccion.png" alt="La Era de Hielo Colección">
+          </a>
+          <a href="/todas-las-colecciones">
+            <img src="/assets/todaslascolecciones.png" alt="Todas las colecciones">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
