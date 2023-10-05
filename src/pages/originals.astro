@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import OriginalsCollect from "../components/OriginalsCollect.astro";
+import Cards from "../components/Cards.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Originals | Disney+">
+  <Header />
+  <section id="originals" class="w-full min-h-screen flex flex-col justify-center mt-[20vh] mb-[60px]">
+    <h2 class="text-4xl text-white text-center tracking-[0.3em] mb-[100px]">
+      ORIGINALES
+    </h2>
+    <div
+      id="originals-container"
+      class="w-full min-h-screen flex flex-col items-center"
+    >
+      <div id="originals-content" class="m-0 p-0">
+        <OriginalsCollect subtitle="Principales">
+          <Cards src="/assets/todoigualono.jpg" alt="Todo igual o no" />
+          <Cards src="/assets/l-pop.jpg" alt="L-POP" />
+          <Cards src="/assets/langlang.jpg" alt="Lang-Lang" />
+          <Cards src="/assets/animalesdecerca.jpg" alt="Animales de cerca" />
+          <Cards
+            src="/assets/quimicadepixar.jpg"
+            alt="Química de pixar: la historia de 'Elementos'"
+          />
+        </OriginalsCollect>
+        <OriginalsCollect subtitle="Series">
+          <Cards src="/assets/animalesdecerca.jpg" alt="Animales de cerca"/>
+          <Cards src="/assets/chueco.jpg" alt="Chueco"/>
+          <Cards src="/assets/clubdedetectives.jpg" alt="Club de detectives"/>
+          <Cards src="/assets/todoigualono.jpg" alt="Todo igual o no"/>
+          <Cards src="/assets/freeks.jpg" alt="Freeks"/>
+        </OriginalsCollect>
+        <OriginalsCollect subtitle="Películas">
+          <Cards src="/assets/chipydale.jpg" alt="Chip y Dale al rescate"/>
+          <Cards src="/assets/frankycarlitos.jpg" alt="Cuando Frank conoció a Carlitos"/>
+          <Cards src="/assets/red.jpg" alt="RED"/>
+          <Cards src="/assets/sneakerella.jpg" alt="Sneakerella"/>
+          <Cards src="/assets/puedeshacerlochang.jpg" alt="Puedes hacerlo Chang"/>
+        </OriginalsCollect>
+        <OriginalsCollect subtitle="Cortos">
+          <Cards src="/assets/beautiful.jpg" alt="Beautiful, FL"/>
+          <Cards src="/assets/blackbelts.jpg" alt="Black Belts"/>
+          <Cards src="/assets/theghost.jpg" alt="The Ghost"/>
+          <Cards src="/assets/maxine.jpg" alt="Maxine"/>
+          <Cards src="/assets/projectcc.jpg" alt="Project CC"/>
+        </OriginalsCollect>
+        <OriginalsCollect subtitle="Especiales">
+          <Cards src="/assets/langlang.jpg" alt="Lang-Lang"/>
+          <Cards src="/assets/princesaslego.jpg" alt="Princesa: aventura en el castillo 'LEGO'"/>
+          <Cards src="/assets/happierthanever.jpg" alt="Detrás de cámaras de HAPPIER THAN EVER"/>
+          <Cards src="/assets/mileycyrus.jpg" alt="Miley Cyrus"/>
+          <Cards src="/assets/taylorswift.jpg" alt="Taylor Swift"/>
+        </OriginalsCollect>
+      </div>
+    </div>
+  </section>
+  <Footer/>
+</Layout>
